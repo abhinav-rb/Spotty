@@ -2,9 +2,9 @@ import os
 
 class SpotifyClient:
     
-    def __init__(self, client_secret, access_token=None):
+    def __init__(self, access_token=None):
         self.client_id = '35ff953650854c458987bb06dc37326a'
-        self.client_secret = client_secret
+        self.client_secret = os.environ["CLIENT_SECRET"]
         self.access_token = access_token
     
     
